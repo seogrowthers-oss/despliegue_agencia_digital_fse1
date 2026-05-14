@@ -1,7 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Bash(git push *)",
+      "Bash(ssh-keygen *)",
+      "Bash(git remote *)",
+      "Bash(ssh *)"
     ]
   }
 }
