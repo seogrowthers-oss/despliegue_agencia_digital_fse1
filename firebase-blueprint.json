@@ -1,0 +1,64 @@
+{
+  "entities": {
+    "NewsItem": {
+      "title": "News Item",
+      "description": "An article or news piece on the platform",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "excerpt": { "type": "string" },
+        "author": { "type": "string" },
+        "date": { "type": "string" },
+        "category": { "type": "string", "enum": ["AI", "Dev", "Tech", "Hardware", "Shock"] },
+        "imageUrl": { "type": "string" },
+        "content": { "type": "string" }
+      },
+      "required": ["title", "excerpt", "author", "date", "category", "imageUrl"]
+    },
+    "ResourceItem": {
+      "title": "Resource Item",
+      "description": "A tutorial, guide, or course",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "type": { "type": "string", "enum": ["Tutorial", "Guide", "Documentation", "Course"] },
+        "difficulty": { "type": "string", "enum": ["Beginner", "Intermediate", "Advanced"] },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "link": { "type": "string" },
+        "imageUrl": { "type": "string" }
+      },
+      "required": ["title", "description", "type", "difficulty", "tags", "link"]
+    },
+    "User": {
+      "title": "User",
+      "description": "A user profile on the platform",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "role": { "type": "string", "enum": ["Member", "Premium", "Admin"] },
+        "avatar": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["uid", "name", "email", "role"]
+    }
+  },
+  "firestore": {
+    "/news/{newsId}": {
+      "schema": "NewsItem",
+      "description": "News articles collection"
+    },
+    "/resources/{resourceId}": {
+      "schema": "ResourceItem",
+      "description": "Educational resources collection"
+    },
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "User profiles"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+# Terminal Environment Changes
+
+## Extension: Anthropic.claude-code
+
+- `CLAUDE_CODE_SSE_PORT=49554`
+
+## Extension: qwenlm.qwen-code-vscode-ide-companion
+
+- `QWEN_CODE_IDE_SERVER_PORT=53746`
+- `QWEN_CODE_IDE_WORKSPACE_PATH=c:\Users\della\OneDrive\Escritorio\seogrowthers\Nueva carpeta\Nueva carpeta\horizons-export-4ae51224-e377-439c-9315-7d2c7f7b11c2`
+
+## Extension: google.gemini-cli-vscode-ide-companion
+
+- `GEMINI_CLI_IDE_SERVER_PORT=53745`
+- `GEMINI_CLI_IDE_WORKSPACE_PATH=c:\Users\della\OneDrive\Escritorio\seogrowthers\Nueva carpeta\Nueva carpeta\horizons-export-4ae51224-e377-439c-9315-7d2c7f7b11c2`
+- `GEMINI_CLI_IDE_AUTH_TOKEN=65421eb6-a702-441b-a496-7cced5dc8da5`
+
+## Extension: ms-python.debugpy
+
+Enables use of [no-config debugging](https://github.com/microsoft/vscode-python-debugger/wiki/No%E2%80%90Config-Debugging), `debugpy <script.py>`, in the terminal.
+
+- `PYDEVD_DISABLE_FILE_VALIDATION=1`
+- `VSCODE_DEBUGPY_ADAPTER_ENDPOINTS=c:\Users\della\.antigravity\extensions\ms-python.debugpy-2026.4.0-win32-x64\.noConfigDebugAdapterEndpoints\endpoint-972932cf7ee2f278.txt`
+- `PATH=${env:PATH};c:\Users\della\.antigravity\extensions\ms-python.debugpy-2026.4.0-win32-x64\bundled\scripts\noConfigScripts`
+- `BUNDLED_DEBUGPY_PATH=c:\Users\della\.antigravity\extensions\ms-python.debugpy-2026.4.0-win32-x64\bundled\libs\debugpy`
+
+## Extension: eamodio.gitlens
+
+Enables GK CLI integration
+
+- `GK_GL_ADDR=http://127.0.0.1:51677`
+- `GK_GL_PATH=C:\Users\della\AppData\Local\Temp\gitkraken\gitlens\gitlens-ipc-server-7704-51677.json`
+
+## Extension: vscode.git
+
+Enables the following features: git auth provider
+
+- `GIT_ASKPASS=c:\Users\della\AppData\Local\Programs\Antigravity\resources\app\extensions\git\dist\askpass.sh`
+- `VSCODE_GIT_ASKPASS_NODE=C:\Users\della\AppData\Local\Programs\Antigravity\Antigravity.exe`
+- `VSCODE_GIT_ASKPASS_EXTRA_ARGS=`
+- `VSCODE_GIT_ASKPASS_MAIN=c:\Users\della\AppData\Local\Programs\Antigravity\resources\app\extensions\git\dist\askpass-main.js`
+- `VSCODE_GIT_IPC_HANDLE=\\.\pipe\vscode-git-b40fb60300-sock`
+
+## Extension: ms-python.python
+
+Enables `python.terminal.shellIntegration.enabled` by modifying `PYTHONSTARTUP` and `PYTHON_BASIC_REPL`
+
+- `PYTHONSTARTUP=c:\Users\della\AppData\Roaming\Antigravity\User\workspaceStorage\a8bccf035cb929ca9e72f8326c7672f2\ms-python.python\pythonrc.py`
+- `PYTHON_BASIC_REPL=1`
